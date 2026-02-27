@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-50: 255 241 242;
+    --brand-100: 255 228 230;
+    --brand-200: 254 205 211;
+    --brand-300: 253 164 175;
+    --brand-400: 251 113 133;
+    --brand-500: 244 63 94;
+    --brand-600: 225 29 72;
+    --brand-700: 190 24 93;
+    --brand-800: 159 18 57;
+    --brand-900: 136 19 55;
+  }
+
+  body {
+    @apply bg-[#FAFBFF] text-slate-900 selection:bg-rose-100 selection:text-rose-900;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold transition-all duration-300 hover:bg-rose-600 hover:shadow-2xl hover:shadow-rose-500/30 active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-outline {
+    @apply px-8 py-4 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl font-bold transition-all duration-300 hover:border-rose-200 hover:bg-rose-50/30 active:scale-95;
+  }
+
+  .card-base {
+    @apply bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.02)] transition-all duration-500 hover:shadow-[0_20px_50px_rgba(225,29,72,0.08)] hover:-translate-y-1 hover:border-rose-100;
+  }
+
+  .input-base {
+    @apply w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-rose-500 focus:bg-white focus:ring-4 focus:ring-rose-500/10 transition-all duration-300 font-semibold text-slate-900 outline-none placeholder:text-slate-400;
+  }
+
+  .badge-rose {
+    @apply inline-block py-1 px-3 rounded-full bg-rose-50 text-rose-600 text-[10px] font-black uppercase tracking-widest;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { @apply bg-transparent; }
+::-webkit-scrollbar-thumb { @apply bg-slate-200 rounded-full hover:bg-slate-300 transition-colors; }
