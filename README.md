@@ -1,7 +1,8 @@
 # SheCan - Project description
 
 SheCan is a web-based platform designed to help women diagnosed with cancer understand their fertility risks and explore preservation options before starting treatment. The website provides personalized recommendations based on age, type of cancer, and location, along with estimated cost calculations and educational guidance. Our goal is to empower patients with early awareness and informed decision-making during a critical stage of their healthcare journey.
-
+## backend url
+[backend](https://github.com/arn-6/SheCan_backend)
 
 ## Tech Stack
 FRONTEND
